@@ -2,7 +2,7 @@
 #  port: 8021
 spring:
   application:
-    name: microservice-consumer-movie-feign-with-hystrix-stream
+    name: aaa
 eureka:
   client:
     serviceUrl:
