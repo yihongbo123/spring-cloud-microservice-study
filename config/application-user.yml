@@ -41,4 +41,4 @@ master:
 
 #测试随机数
 aa:
-  value: ${random.int}
+  value: 11111
