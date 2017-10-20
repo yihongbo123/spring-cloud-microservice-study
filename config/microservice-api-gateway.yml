@@ -9,5 +9,5 @@ zuul:
       # Eureka中的serviceId
       service-id: microservice-consumer-movie-ribbon-with-hystrix
     feign:
-      path: /feignn/**
+      path: /feign/**
       service-id: MICROSERVICE-CONSUMER-MOVIE-FEIGN-WITH-HYSTRIX-STREAM
