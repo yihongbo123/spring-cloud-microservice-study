@@ -39,11 +39,6 @@ master:
     password: test@tgw88
     driverClassName: com.mysql.jdbc.Driver
 
-security:
-  user:
-    name: user
-    password: 123456
-
 
 #测试随机数
 aa:
