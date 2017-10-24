@@ -8,12 +8,12 @@ spring:
         enabled: true
   application:
     name: microservice-consumer-movie-feign-with-hystrix-stream
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
-  instance:
-    hostname: feign
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
+#  instance:
+#    hostname: feign
     # 此处，preferIpAddress不设置或者设为false，不能设为true，否则影响turbine的测试。turbine存在的问题：eureka.instance.hostname一致时只能检测到一个节点，会造成turbine数据不完整
 ribbon:
   eureka:
