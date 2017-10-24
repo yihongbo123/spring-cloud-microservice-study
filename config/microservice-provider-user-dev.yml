@@ -25,12 +25,12 @@ eureka:
     healthcheck:
       enabled: true #开启健康检查（需要spring-boot-starter-actuator依赖）
     serviceUrl:
-      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/ # 指定注册中⼼的地址
-  instance:
-    # leaseExpirationDurationInSeconds，表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
-    lease-expiration-duration-in-seconds: 10
-    # leaseRenewalIntervalInSeconds，表示eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance。除此之外，如果该instance实现了HealthCheckCallback，并决定让自己unavailable的话，则该instance也不会接收到流量。默认30秒
-    lease-renewal-interval-in-seconds: 5
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/ # 指定注册中⼼的地址
+#  instance:
+#    # leaseExpirationDurationInSeconds，表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
+#    lease-expiration-duration-in-seconds: 10
+#    # leaseRenewalIntervalInSeconds，表示eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance。除此之外，如果该instance实现了HealthCheckCallback，并决定让自己unavailable的话，则该instance也不会接收到流量。默认30秒
+#    lease-renewal-interval-in-seconds: 5
 
 master:
   datasource:
@@ -39,10 +39,10 @@ master:
     password: test@tgw88
     driverClassName: com.mysql.jdbc.Driver
 
-#security:
-#  user:
-#    name: user
-#    password: 123456
+security:
+  user:
+    name: user
+    password: 123456
 
 
 #测试随机数
