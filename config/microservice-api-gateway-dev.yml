@@ -1,16 +1,10 @@
-eureka:
-  instance:
-    hostname: gateway
-  client:
-    serviceUrl:
-      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
 spring:
   cloud:
     loadbalancer:
       retry:
       #该参数用来开启重试的机制
         enabled: true
-        
+
 #Hystrix全局超时时间
 hystrix:
   command:
@@ -44,5 +38,5 @@ zuul:
       # Eureka中的serviceId
       service-id: microservice-consumer-movie-ribbon-with-hystrix
     feign:
-      path: /feign/**
+      path: /feignn/**
       service-id: MICROSERVICE-CONSUMER-MOVIE-FEIGN-WITH-HYSTRIX-STREAM
