@@ -12,7 +12,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 5000
+            timeoutInMilliseconds: 10000
 
 microservice-provider-user:
   ribbon:
