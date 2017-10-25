@@ -17,7 +17,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 5000
+            timeoutInMilliseconds: 2500
 microservice-provider-user:
   ribbon:
     #请求连接的超时时间
