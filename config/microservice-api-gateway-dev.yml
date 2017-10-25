@@ -3,7 +3,7 @@ spring:
     loadbalancer:
       retry:
       #该参数用来开启重试的机制
-        enabled: false
+        enabled: true
 
 
 zuul:
