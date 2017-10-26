@@ -1,4 +1,8 @@
 spring:
+  # 代表收集跟踪信息的百分比（0.1代表10%）
+  sleuth:
+      sampler:
+        percentage: 1
   cloud:
     loadbalancer:
       retry:
@@ -40,11 +44,8 @@ logging:
           servlet:
             DispatcherServlet: debug
 
-# 代表收集跟踪信息的百分比（0.1代表10%）
-spring:
-  sleuth:
-    sampler:
-      percentage: 1
+
+
 
 
 
