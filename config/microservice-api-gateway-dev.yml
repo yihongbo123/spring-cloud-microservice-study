@@ -12,7 +12,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 3000
+            timeoutInMilliseconds: 2500
 
 ribbon:
   #请求连接的超时时间
