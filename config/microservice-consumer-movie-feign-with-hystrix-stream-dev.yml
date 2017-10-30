@@ -3,7 +3,7 @@ spring:
     loadbalancer:
       retry:
       #该参数用来开启重试的机制
-        enabled: false
+        enabled: true
 
     # 此处，preferIpAddress不设置或者设为false，不能设为true，否则影响turbine的测试。turbine存在的问题：eureka.instance.hostname一致时只能检测到一个节点，会造成turbine数据不完整
 ribbon:
@@ -18,7 +18,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 2500
+            timeoutInMilliseconds: 2000
 microservice-provider-user:
   ribbon:
     #请求连接的超时时间
@@ -28,9 +28,9 @@ microservice-provider-user:
     #对所有操作请求都进行重试
     OkToRetryOnAllOperations: true
     #切换实例的重试次数
-    MaxAutoRetriesNextServer: 0
+    MaxAutoRetriesNextServer: 2
     #对当前实例的重试次数
-    MaxAutoRetries: 0
+    MaxAutoRetries: 1
 
 logging:
   level:
