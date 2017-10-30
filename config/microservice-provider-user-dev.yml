@@ -4,9 +4,11 @@ spring:
   application:
     name: microservice-provider-user # 项⽬名称尽量⽤⼩写
   redis:
-    host: 172.18.44.122
-    port: 6379
-    timeout: 500
+    cluster:
+      nodes:
+        - 172.18.44.122:6381
+        - 172.18.44.122:6382
+        - 172.18.44.123:6381
 #  jpa:
 #    generate-ddl: false
 #    show-sql: true
