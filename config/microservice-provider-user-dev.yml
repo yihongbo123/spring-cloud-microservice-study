@@ -6,7 +6,6 @@ spring:
   redis:
     host: 172.18.44.122
     port: 6379
-    timeout: 500
 #  jpa:
 #    generate-ddl: false
 #    show-sql: true
