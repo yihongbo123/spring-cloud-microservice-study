@@ -4,8 +4,8 @@ spring:
   application:
     name: microservice-provider-user # 项⽬名称尽量⽤⼩写
   redis:
-      host: 172.18.44.122
-      port: 6379
+    host: 172.18.44.122
+    port: 6379
 #  jpa:
 #    generate-ddl: false
 #    show-sql: true
