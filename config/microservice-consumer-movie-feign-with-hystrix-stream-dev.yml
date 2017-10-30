@@ -1,8 +1,4 @@
 spring:
-  # 代表收集跟踪信息的百分比（0.1代表10%）
-  sleuth:
-      sampler:
-        percentage: 1
   cloud:
     loadbalancer:
       retry:
@@ -22,7 +18,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 2000
+            timeoutInMilliseconds: 2500
 microservice-provider-user:
   ribbon:
     #请求连接的超时时间
@@ -32,7 +28,7 @@ microservice-provider-user:
     #对所有操作请求都进行重试
     OkToRetryOnAllOperations: true
     #切换实例的重试次数
-    MaxAutoRetriesNextServer: 2
+    MaxAutoRetriesNextServer: 1
     #对当前实例的重试次数
     MaxAutoRetries: 1
 
