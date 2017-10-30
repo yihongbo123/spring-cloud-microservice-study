@@ -28,7 +28,7 @@ eureka:
     healthcheck:
     #eureka.client.healthcheck.enabled=true 只应该在application.yml中设置。
     #如果设置在bootstrap.yml中将会导致一些不良的副作用，例如在Eureka中注册的应用名称是UNKNOWN等。
-      enabled: true #开启健康检查（需要spring-boot-starter-actuator依赖）
+      enabled: false #开启健康检查（需要spring-boot-starter-actuator依赖）
     serviceUrl:
       defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/ # 指定注册中⼼的地址
 #  instance:
