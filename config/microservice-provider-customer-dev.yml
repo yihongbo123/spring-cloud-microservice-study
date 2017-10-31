@@ -4,6 +4,7 @@ spring:
     username: testuser
     password: test@tgw88
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
   redis:
     cluster:
       nodes:
