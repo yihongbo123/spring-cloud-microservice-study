@@ -28,7 +28,7 @@ ribbon:
 
 zuul:
   # 需要忽视的服务(配置后将不会被路由)
-  ignored-services: microservice-provider-user
+  ignored-services: cloud-base-service-user,cloud-base-service-customer
   routes:
     # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
     movie:
@@ -38,4 +38,4 @@ zuul:
       service-id: microservice-consumer-movie-ribbon-with-hystrix
     feign:
       path: /feign/**
-      service-id: MICROSERVICE-CONSUMER-MOVIE-FEIGN-WITH-HYSTRIX-STREAM
+      service-id: cloud-service-feign
