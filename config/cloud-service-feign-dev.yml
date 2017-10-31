@@ -19,7 +19,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 2500
-microservice-provider-user:
+cloud-base-service-customer:
   ribbon:
     #请求连接的超时时间
     ConnectTimeout: 500
