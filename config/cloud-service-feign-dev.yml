@@ -12,7 +12,7 @@ ribbon:
 
 
 #Hystrix全局超时时间
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 200
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2000
 cloud-base-service-customer:
   ribbon:
     #请求连接的超时时间
