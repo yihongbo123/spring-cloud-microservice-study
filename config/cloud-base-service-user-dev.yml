@@ -22,14 +22,7 @@ spring:
 #    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 #    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
 #    com.itmuch.youran.persistence: ERROR
-eureka:
-  client:
-    healthcheck:
-    #eureka.client.healthcheck.enabled=true 只应该在application.yml中设置。
-    #如果设置在bootstrap.yml中将会导致一些不良的副作用，例如在Eureka中注册的应用名称是UNKNOWN等。
-      enabled: false #开启健康检查（需要spring-boot-starter-actuator依赖）
-    serviceUrl:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/ # 指定注册中⼼的地址
+
 #  instance:
 #    # leaseExpirationDurationInSeconds，表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
 #    lease-expiration-duration-in-seconds: 10
@@ -51,4 +44,4 @@ security:
 
 #测试随机数
 aa:
-  value: 55555
+  value: 6666
