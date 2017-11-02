@@ -21,7 +21,7 @@ spring:
 
 #测试随机数
 aa:
-  value: 6666
+  value: 77777
 #    generate-ddl: false
 #    show-sql: true
 #    hibernate:
