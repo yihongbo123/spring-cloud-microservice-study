@@ -22,7 +22,3 @@ spring:
 #测试随机数
 aa:
   value: 77777
-## 发送http://host:port/bus/refresh刷新时，关闭安全验证
-management:
-  security:
-     enabled: false
