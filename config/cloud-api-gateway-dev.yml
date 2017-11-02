@@ -10,7 +10,7 @@ hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 
 ribbon:
   #请求连接的超时时间
-  ConnectTimeout: 500
+  ConnectTimeout: 50000
   #请求处理的超时时间
   ReadTimeout: 60000
   #对所有操作请求都进行重试
