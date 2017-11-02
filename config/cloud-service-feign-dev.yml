@@ -13,6 +13,7 @@ ribbon:
 
 #Hystrix全局超时时间
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2200
+
 cloud-base-service-customer:
   ribbon:
     #请求连接的超时时间
@@ -33,6 +34,10 @@ logging:
         web:
           servlet:
             DispatcherServlet: debug
+
+feign:
+  hystrix:
+    enabled: true
 
 
 
