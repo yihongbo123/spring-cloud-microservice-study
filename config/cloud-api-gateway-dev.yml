@@ -12,13 +12,13 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 2500
+            timeoutInMilliseconds: 3000
 
 ribbon:
   #请求连接的超时时间
   ConnectTimeout: 500
   #请求处理的超时时间
-  ReadTimeout: 1500
+  ReadTimeout: 2000
   #对所有操作请求都进行重试
   OkToRetryOnAllOperations: true
   #切换实例的重试次数
