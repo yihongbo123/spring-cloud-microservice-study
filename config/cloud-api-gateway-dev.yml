@@ -33,3 +33,6 @@ zuul:
     feign:
       path: /feign/**
       service-id: cloud-service-feign
+    customer:
+          path: /customer/**
+          service-id: cloud-service-customer
