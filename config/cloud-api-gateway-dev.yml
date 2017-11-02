@@ -6,8 +6,13 @@ spring:
         enabled: true
 
 #Hystrix全局超时时间
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2000
-
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2500
 ribbon:
   #请求连接的超时时间
   ConnectTimeout: 50000
