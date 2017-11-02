@@ -18,6 +18,10 @@ spring:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
       #如果数据库没有表就创建，有数据表如果结构发生就更新
       ddl-auto: update
+
+#测试随机数
+aa:
+  value: 11111
 #    generate-ddl: false
 #    show-sql: true
 #    hibernate:
