@@ -19,11 +19,11 @@ cloud-base-service-customer:
     #请求连接的超时时间
     ConnectTimeout: 500
     #请求处理的超时时间
-    ReadTimeout: 1500
+    ReadTimeout: 1000
     #对所有操作请求都进行重试
     OkToRetryOnAllOperations: true
     #切换实例的重试次数
-    MaxAutoRetriesNextServer: 1
+    MaxAutoRetriesNextServer: 2
     #对当前实例的重试次数
     MaxAutoRetries: 1
 cloud-base-service-user:
@@ -31,11 +31,11 @@ cloud-base-service-user:
     #请求连接的超时时间
     ConnectTimeout: 500
     #请求处理的超时时间
-    ReadTimeout: 1500
+    ReadTimeout: 1000
     #对所有操作请求都进行重试
     OkToRetryOnAllOperations: true
     #切换实例的重试次数
-    MaxAutoRetriesNextServer: 1
+    MaxAutoRetriesNextServer: 2
     #对当前实例的重试次数
     MaxAutoRetries: 1
 
