@@ -6,7 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-api-gateway" />
+        <module name="cloud-base-service-customer" />
+        <module name="cloud-base-service-user" />
+        <module name="cloud-commom" />
+        <module name="cloud-config-server" />
+        <module name="cloud-hystrix-dashboard" />
+        <module name="cloud-hystrix-turbine" />
+        <module name="cloud-register-server" />
+        <module name="cloud-service-feign" />
+        <module name="cloud-service-feign-user" />
+        <module name="cloud-zipkin-server" />
+        <module name="config" />
+        <module name="microservice-api-gateway" />
+        <module name="microservice-commom" />
+        <module name="microservice-config-client" />
+        <module name="microservice-config-client-eureka" />
+        <module name="microservice-config-client-eureka-kafka" />
         <module name="microservice-config-server" />
+        <module name="microservice-config-server-eureka" />
         <module name="microservice-consumer-movie-feign" />
         <module name="microservice-consumer-movie-feign-with-hystrix" />
         <module name="microservice-consumer-movie-feign-with-hystrix-stream" />
@@ -15,21 +33,45 @@
         <module name="microservice-discovery-eureka" />
         <module name="microservice-hystrix-dashboard" />
         <module name="microservice-hystrix-turbine" />
+        <module name="microservice-provider-customer" />
         <module name="microservice-provider-user" />
+        <module name="microservice-stream-consumer" />
+        <module name="microservice-stream-hello" />
+        <module name="microservice-stream-producer" />
+        <module name="microservice-zipkin-server" />
+      </profile>
+      <profile name="Annotation profile for spring-cloud-microservice-study" enabled="true">
+        <sourceOutputDir name="../microservice-taoguwang360-redis/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../microservice-taoguwang360-redis/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-taoguwang360-redis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="microservice-config-server" target="1.6" />
-      <module name="microservice-consumer-movie-feign" target="1.6" />
-      <module name="microservice-consumer-movie-feign-with-hystrix" target="1.6" />
-      <module name="microservice-consumer-movie-feign-with-hystrix-stream" target="1.6" />
-      <module name="microservice-consumer-movie-ribbon" target="1.6" />
-      <module name="microservice-consumer-movie-ribbon-with-hystrix" target="1.6" />
-      <module name="microservice-discovery-eureka" target="1.6" />
-      <module name="microservice-hystrix-dashboard" target="1.6" />
-      <module name="microservice-hystrix-turbine" target="1.6" />
-      <module name="microservice-provider-user" target="1.6" />
-      <module name="spring-cloud-microservice-study" target="1.6" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="cloud-api-gateway" target="1.8" />
+      <module name="cloud-base-service-customer" target="1.8" />
+      <module name="cloud-base-service-user" target="1.8" />
+      <module name="cloud-commom" target="1.8" />
+      <module name="cloud-config-server" target="1.8" />
+      <module name="cloud-hystrix-dashboard" target="1.8" />
+      <module name="cloud-hystrix-turbine" target="1.8" />
+      <module name="cloud-register-server" target="1.8" />
+      <module name="cloud-service-customer" target="1.8" />
+      <module name="cloud-service-feign" target="1.8" />
+      <module name="cloud-service-feign-user" target="1.8" />
+      <module name="cloud-zipkin-server" target="1.8" />
+      <module name="config" target="1.5" />
+      <module name="microservice-config-client" target="1.8" />
+      <module name="microservice-config-client-eureka" target="1.8" />
+      <module name="microservice-config-client-eureka-kafka" target="1.8" />
+      <module name="microservice-config-server" target="1.8" />
+      <module name="microservice-consumer-movie-feign" target="1.8" />
+      <module name="microservice-consumer-movie-feign-with-hystrix" target="1.8" />
+      <module name="microservice-consumer-movie-ribbon" target="1.8" />
+      <module name="microservice-consumer-movie-ribbon-with-hystrix" target="1.8" />
+      <module name="microservice-stream-consumer" target="1.8" />
+      <module name="microservice-stream-producer" target="1.8" />
+      <module name="spring-cloud-microservice-study" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

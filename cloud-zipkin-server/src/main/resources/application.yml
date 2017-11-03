@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zipkin-server
+  datasource:
+    schema: classpath:/mysql.sql
+    url: jdbc:mysql://172.18.44.122:3306/cloudTest?useUnicode=true&characterEncoding=utf8
+    username: testuser
+    password: test@tgw88
+    continue-on-error: true
+    initialize: true
+  cloud:
+    stream:
+      kafka:
+        binder:
+          zk-nodes: 172.18.44.122:2181
+          brokers: 172.18.44.122:9092
+#指定存储
+zipkin:
+  storage:
+    type: mysql
+
+server:
+  port: 9411

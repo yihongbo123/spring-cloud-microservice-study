@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tgw360.dao.master.CustomerDao">
+    <resultMap id="BaseResultMap" type="com.tgw360.domain.User">
+        <result column="id" property="id" />
+        <result column="created_at" property="createdAt" />
+        <result column="email" property="email" />
+        <result column="first_name" property="firstName" />
+        <result column="last_name" property="lastName" />
+        <result column="account_id" property="accountId" />
+    </resultMap>
+
+    <parameterMap id="User" type="com.tgw360.domain.User"/>
+
+    <sql id="Base_Column_List">
+        id, user_name, description
+    </sql>
+
+    <select id="findByAccountId" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select *
+        from customer
+        where account_id = #{id}
+    </select>
+    <select id="findAll" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select *
+        from customer
+    </select>
+
+</mapper>

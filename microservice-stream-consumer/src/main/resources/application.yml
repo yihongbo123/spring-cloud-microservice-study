@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: input-demo
+  cloud:
+     instance-count: 1
+     instance-index: 0
+     stream:
+        kafka:
+          binder:
+            brokers: 172.18.44.122:9092
+            zk-nodes: 172.18.44.122:2182
+            auto-add-partitions: true
+            auto-create-topics: true
+            min-partition-count: 1
+        bindings:
+          input:
+            destination: event-demo
+            group: s1
+            consumer:
+              autoCommitOffset: false
+              concurrency: 1
+              partitioned: false
