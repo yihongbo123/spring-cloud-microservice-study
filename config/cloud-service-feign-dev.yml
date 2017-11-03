@@ -14,30 +14,31 @@ ribbon:
 #Hystrix全局超时时间
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 10000
 
-cloud-base-service-customer:
-  ribbon:
-    #请求连接的超时时间
-    ConnectTimeout: 500
-    #请求处理的超时时间
-    ReadTimeout: 10000
-    #对所有操作请求都进行重试
-    OkToRetryOnAllOperations: true
-    #切换实例的重试次数
-    MaxAutoRetriesNextServer: 2
-    #对当前实例的重试次数
-    MaxAutoRetries: 1
-cloud-base-service-user:
-  ribbon:
-    #请求连接的超时时间
-    ConnectTimeout: 500
-    #请求处理的超时时间
-    ReadTimeout: 10000
-    #对所有操作请求都进行重试
-    OkToRetryOnAllOperations: true
-    #切换实例的重试次数
-    MaxAutoRetriesNextServer: 2
-    #对当前实例的重试次数
-    MaxAutoRetries: 1
+#cloud-base-service-customer:
+#  ribbon:
+#    #请求连接的超时时间
+#    ConnectTimeout: 500
+#    #请求处理的超时时间
+#    ReadTimeout: 10000
+#    #对所有操作请求都进行重试
+#    OkToRetryOnAllOperations: true
+#    #切换实例的重试次数
+#    MaxAutoRetriesNextServer: 2
+#    #对当前实例的重试次数
+#    MaxAutoRetries: 1
+#cloud-base-service-user:
+ribbon:
+  #请求连接的超时时间
+  ConnectTimeout: 500
+  #请求处理的超时时间
+  ReadTimeout: 10000
+  #对所有操作请求都进行重试
+  OkToRetryOnAllOperations: true
+  #切换实例的重试次数
+  MaxAutoRetriesNextServer: 2
+  #对当前实例的重试次数
+  MaxAutoRetries: 1
+
 
 logging:
   level:
