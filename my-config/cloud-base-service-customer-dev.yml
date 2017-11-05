@@ -4,6 +4,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
 #  datasource:
 #    url: jdbc:mysql://172.18.44.122:3306/cloudTest?useUnicode=true&characterEncoding=utf8
 #    username: testuser
