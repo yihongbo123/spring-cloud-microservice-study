@@ -31,7 +31,7 @@ zuul:
       # Eureka中的serviceId
       service-id: microservice-consumer-movie-ribbon-with-hystrix
     user:
-      # 想要映射到的路径
+      # 想要映射到的路径 a
       path: /user/**
       # Eureka中的serviceId
       service-id: cloud-base-service-user
