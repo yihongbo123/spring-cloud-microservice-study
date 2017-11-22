@@ -31,7 +31,7 @@ spring:
 
 master:
   datasource:
-    url: jdbc:mysql://172.18.44.122:3306/cloudTest?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://172.18.44.188:3306/cloudTest?useUnicode=true&characterEncoding=utf8
     username: testuser
     password: test@tgw88
     driverClassName: com.mysql.jdbc.Driver
