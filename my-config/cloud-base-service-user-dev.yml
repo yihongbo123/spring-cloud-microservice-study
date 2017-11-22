@@ -31,9 +31,9 @@ spring:
 
 master:
   datasource:
-    url: jdbc:mysql://172.18.44.122:3306/cloudTest?useUnicode=true&characterEncoding=utf8
-    username: testuser
-    password: test@tgw88
+    url: jdbc:mysql://localhost:3306/cloudTest?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
     driverClassName: com.mysql.jdbc.Driver
 
 security:
