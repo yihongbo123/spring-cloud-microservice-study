@@ -27,8 +27,6 @@ ribbon:
   MaxAutoRetriesNextServer: 2
   #对当前实例的重试次数
   MaxAutoRetries: 1
-  eureka:
-    enabled: false
 
 
 zuul:
