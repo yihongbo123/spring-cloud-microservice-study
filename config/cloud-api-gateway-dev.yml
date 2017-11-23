@@ -5,7 +5,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 10000
 
 ribbon:
   #请求连接的超时时间
@@ -17,11 +17,11 @@ ribbon:
   #切换实例的重试次数
   MaxAutoRetriesNextServer: 2
   #对当前实例的重试次数
-  MaxAutoRetries: 1
+  MaxAutoRetries: 0
 
 
 zuul:
-  retryable: true
+  retryable: false
   # 需要忽视的服务(配置后将不会被路由)
 #  ignored-services: cloud-base-service-user,cloud-base-service-customer
   routes:
