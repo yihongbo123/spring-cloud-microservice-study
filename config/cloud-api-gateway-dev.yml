@@ -5,6 +5,7 @@ spring:
       #该参数用来开启重试的机制
         enabled: true
 
+
 #Hystrix全局超时时间
 hystrix:
   command:
@@ -30,6 +31,7 @@ ribbon:
 
 
 zuul:
+  retryable: true
   # 需要忽视的服务(配置后将不会被路由)
 #  ignored-services: cloud-base-service-user,cloud-base-service-customer
   routes:
