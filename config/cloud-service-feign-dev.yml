@@ -38,9 +38,19 @@ cloud-base-service-customer:
     #请求连接的超时时间
     ConnectTimeout: 500
     #请求处理的超时时间
-    ReadTimeout: 10000
+    ReadTimeout: 2000
     #对所有操作请求都进行重试
-    OkToRetryOnAllOperations: true
+    #如果设置了OKToRetryOnAllOperations这个参数为true，
+    #第一个if的构造函数就设置为true，这就比较危险了，
+    #如果接口是post或者put请求，这是进行修改操作，
+    #如果服务器长时间不返回，客户端发生socket read timeout会进行重试，
+    #如果服务器接口没做幂等性，这个后果自己想想。
+    #继续看后面两个判断，得出的结论是：
+    #如果是Get请求设置为OKToRetryOnAllOperations=true不影响，因为只涉及到读操作，
+    #如果是其他http方法，默认只会在socket还没建立连接时进行重试，
+    #比如突然网络抖动或者一台服务实例挂了，这是没问题的，
+    #因为只保证了服务器端执行一次（还是建议涉及到修改的接口做好幂等性）。
+    OkToRetryOnAllOperations: false
     #切换实例的重试次数
     MaxAutoRetriesNextServer: 2
     #对当前实例的重试次数
@@ -50,9 +60,9 @@ cloud-base-service-user:
     #请求连接的超时时间
     ConnectTimeout: 500
     #请求处理的超时时间
-    ReadTimeout: 10000
+    ReadTimeout: 2000
     #对所有操作请求都进行重试
-    OkToRetryOnAllOperations: true
+    OkToRetryOnAllOperations: false
     #切换实例的重试次数
     MaxAutoRetriesNextServer: 2
     #对当前实例的重试次数
