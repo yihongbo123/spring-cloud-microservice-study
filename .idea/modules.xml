@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/a.iml" filepath="$PROJECT_DIR$/a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aaaaaaaasdfsdf/aaaaaaaasdfsdf.iml" filepath="$PROJECT_DIR$/aaaaaaaasdfsdf/aaaaaaaasdfsdf.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" filepath="$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-auth-server/cloud-auth-server.iml" filepath="$PROJECT_DIR$/cloud-auth-server/cloud-auth-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-base-service-customer/cloud-base-service-customer.iml" filepath="$PROJECT_DIR$/cloud-base-service-customer/cloud-base-service-customer.iml" />
@@ -14,11 +14,10 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-parent.iml" filepath="$PROJECT_DIR$/cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" filepath="$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" filepath="$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-service-feign-user/cloud-service-feign-user.iml" filepath="$PROJECT_DIR$/cloud-service-feign-user/cloud-service-feign-user.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-producer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-producer/cloud-stream-kafka-producer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-producer/cloud-stream-kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" filepath="$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microservice-config-client/cloud-config-client.iml" filepath="$PROJECT_DIR$/microservice-config-client/cloud-config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-config-client-eureka/microservice-config-client-eureka.iml" filepath="$PROJECT_DIR$/microservice-config-client-eureka/microservice-config-client-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-config-client-eureka-kafka/microservice-config-client-eureka-kafka.iml" filepath="$PROJECT_DIR$/microservice-config-client-eureka-kafka/microservice-config-client-eureka-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-config-server/microservice-config-server.iml" filepath="$PROJECT_DIR$/microservice-config-server/microservice-config-server.iml" />

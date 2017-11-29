@@ -12,9 +12,9 @@
     <file url="file://$PROJECT_DIR$/cloud-hystrix-turbine" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-register-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-feign" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-service-feign-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-kafka-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-kafka-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-zipkin-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-config-client-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-config-client-eureka-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-config-server" charset="UTF-8" />

@@ -19,7 +19,6 @@
         <module>cloud-service-feign</module>
         <module>microservice-config-server</module>
         <module>config</module>
-        <module>microservice-config-client</module>
         <module>cloud-api-gateway</module>
         <module>microservice-config-client-eureka</module>
         <module>cloud-config-server</module>
@@ -29,8 +28,9 @@
         <module>microservice-stream-producer</module>
         <module>cloud-base-service-customer</module>
         <module>cloud-commom</module>
-        <module>cloud-service-feign-user</module>
         <module>cloud-auth-server</module>
+        <module>cloud-stream-kafka-producer</module>
+        <module>cloud-stream-kafka-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

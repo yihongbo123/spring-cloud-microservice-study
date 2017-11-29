@@ -14,7 +14,7 @@
     <!-- 控制台Appender -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <!-- Minimum logging level to be presented in the console logs-->
+            <!-- Minimum logging level to be presented out the console logs-->
             <level>debug</level>
         </filter>
 

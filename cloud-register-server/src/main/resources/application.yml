@@ -11,7 +11,7 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #  server:
 #    enable-self-preservation: false
-#    eviction-interval-timer-in-ms: 4000
+#    eviction-interval-timer-out-ms: 4000
 ---
 spring:
   profiles: eureka1                                 # 指定profile=peer1
@@ -25,7 +25,7 @@ eureka:
       defaultZone: http://172.18.44.123:8761/eureka/      # 将自己注册到peer2这个Eureka上面去
 #  server:
 #    enable-self-preservation: false            # 设为false，关闭自我保护
-#    eviction-interval-timer-in-ms: 15000      # 清理间隔（单位毫秒，默认是60*1000）
+#    eviction-interval-timer-out-ms: 15000      # 清理间隔（单位毫秒，默认是60*1000）
 
 ---
 spring:
@@ -40,7 +40,7 @@ eureka:
       defaultZone: http://172.18.44.122:8761/eureka/
 #  server:
 #      enable-self-preservation: false            # 设为false，关闭自我保护
-#      eviction-interval-timer-in-ms: 15000      # 清理间隔（单位毫秒，默认是60*1000）
+#      eviction-interval-timer-out-ms: 15000      # 清理间隔（单位毫秒，默认是60*1000）
 
 
 

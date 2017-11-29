@@ -11,12 +11,13 @@
         <module name="cloud-base-service-customer" />
         <module name="cloud-base-service-user" />
         <module name="cloud-commom" />
-        <module name="cloud-config-client" />
         <module name="cloud-config-server" />
         <module name="cloud-hystrix-dashboard" />
         <module name="cloud-hystrix-turbine" />
         <module name="cloud-register-server" />
-        <module name="cloud-service-feign (2)" />
+        <module name="cloud-service-feign" />
+        <module name="cloud-stream-kafka-consumer" />
+        <module name="cloud-stream-kafka-producer" />
         <module name="cloud-zipkin-server" />
         <module name="config" />
         <module name="microservice-config-client-eureka" />
@@ -29,12 +30,6 @@
         <module name="microservice-stream-consumer" />
         <module name="microservice-stream-producer" />
       </profile>
-      <profile name="Annotation profile for cloud-parent" enabled="true">
-        <sourceOutputDir name="../cloud-service-feign/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../cloud-service-feign/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="cloud-service-feign (1)" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-api-gateway" target="1.8" />
@@ -42,14 +37,14 @@
       <module name="cloud-base-service-customer" target="1.8" />
       <module name="cloud-base-service-user" target="1.8" />
       <module name="cloud-commom" target="1.8" />
-      <module name="cloud-config-client" target="1.8" />
       <module name="cloud-config-server" target="1.8" />
       <module name="cloud-hystrix-dashboard" target="1.8" />
       <module name="cloud-hystrix-turbine" target="1.8" />
       <module name="cloud-parent" target="1.8" />
       <module name="cloud-register-server" target="1.8" />
-      <module name="cloud-service-feign (1)" target="1.8" />
-      <module name="cloud-service-feign (2)" target="1.6" />
+      <module name="cloud-service-feign" target="1.8" />
+      <module name="cloud-stream-kafka-consumer" target="1.8" />
+      <module name="cloud-stream-kafka-producer" target="1.8" />
       <module name="cloud-zipkin-server" target="1.8" />
       <module name="config" target="1.5" />
       <module name="microservice-config-client-eureka" target="1.8" />

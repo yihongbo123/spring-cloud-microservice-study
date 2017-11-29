@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: cloud-stream-kafka-producer
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 172.18.44.122:9092
+          zk-nodes: 172.18.44.122:2181
+          minPartitionCount: 1
+          autoCreateTopics: true
+          autoAddPartitions: true
+      bindings:
+        output:
+          destination: wsh-topic-01
+          content-type: application/json
+          producer:
+            partitionCount: 1
+server:
+  port: 8800
