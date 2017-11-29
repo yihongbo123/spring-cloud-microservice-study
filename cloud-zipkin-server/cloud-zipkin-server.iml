@@ -14,7 +14,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-sleuth-zipkin-stream:1.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.6.RELEASE" level="project" />
@@ -56,6 +56,10 @@
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-heroku-connector:1.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-localconfig-connector:1.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.java:zipkin-server:1.28.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:1.5.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator:1.5.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.java:zipkin:1.28.0" level="project" />
     <orderEntry type="library" name="Maven: io.zipkin.java:zipkin-autoconfigure-storage-mysql:1.28.0" level="project" />
     <orderEntry type="library" name="Maven: io.zipkin.java:zipkin-storage-mysql:1.28.0" level="project" />
     <orderEntry type="library" name="Maven: org.mariadb.jdbc:mariadb-java-client:1.5.9" level="project" />
@@ -81,10 +85,6 @@
     <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.2.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.kafka:spring-kafka:1.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.integration:spring-integration-kafka:2.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.zipkin.java:zipkin-server:1.28.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:1.5.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator:1.5.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.zipkin.java:zipkin:1.28.0" level="project" />
     <orderEntry type="library" name="Maven: io.zipkin.java:zipkin-autoconfigure-ui:1.28.0" level="project" />
     <orderEntry type="library" name="Maven: io.zipkin.java:zipkin-ui:1.28.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.6.RELEASE" level="project" />

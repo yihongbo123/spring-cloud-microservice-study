@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/a.iml" filepath="$PROJECT_DIR$/a.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" filepath="$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-auth-server/cloud-auth-server.iml" filepath="$PROJECT_DIR$/cloud-auth-server/cloud-auth-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-base-service-customer/cloud-base-service-customer.iml" filepath="$PROJECT_DIR$/cloud-base-service-customer/cloud-base-service-customer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-base-service-user/cloud-base-service-user.iml" filepath="$PROJECT_DIR$/cloud-base-service-user/cloud-base-service-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-commom/cloud-commom.iml" filepath="$PROJECT_DIR$/cloud-commom/cloud-commom.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-config-server/cloud-config-server.iml" filepath="$PROJECT_DIR$/cloud-config-server/cloud-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-hystrix-dashboard/cloud-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/cloud-hystrix-dashboard/cloud-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-hystrix-turbine/cloud-hystrix-turbine.iml" filepath="$PROJECT_DIR$/cloud-hystrix-turbine/cloud-hystrix-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent.iml" filepath="$PROJECT_DIR$/cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" filepath="$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" filepath="$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-feign-user/cloud-service-feign-user.iml" filepath="$PROJECT_DIR$/cloud-service-feign-user/cloud-service-feign-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-producer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" filepath="$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microservice-config-client/microservice-config-client.iml" filepath="$PROJECT_DIR$/microservice-config-client/microservice-config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-config-client/cloud-config-client.iml" filepath="$PROJECT_DIR$/microservice-config-client/cloud-config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-config-client-eureka/microservice-config-client-eureka.iml" filepath="$PROJECT_DIR$/microservice-config-client-eureka/microservice-config-client-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-config-client-eureka-kafka/microservice-config-client-eureka-kafka.iml" filepath="$PROJECT_DIR$/microservice-config-client-eureka-kafka/microservice-config-client-eureka-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-config-server/microservice-config-server.iml" filepath="$PROJECT_DIR$/microservice-config-server/microservice-config-server.iml" />
@@ -24,7 +28,6 @@
       <module fileurl="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-with-hystrix/microservice-consumer-movie-ribbon-with-hystrix.iml" filepath="$PROJECT_DIR$/microservice-consumer-movie-ribbon-with-hystrix/microservice-consumer-movie-ribbon-with-hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-stream-consumer/microservice-stream-consumer.iml" filepath="$PROJECT_DIR$/microservice-stream-consumer/microservice-stream-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-stream-producer/microservice-stream-producer.iml" filepath="$PROJECT_DIR$/microservice-stream-producer/microservice-stream-producer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-cloud-microservice-study.iml" filepath="$PROJECT_DIR$/spring-cloud-microservice-study.iml" />
     </modules>
   </component>
 </project>

@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface MessageService {
     public Customer findByIdFeign(Long id);
-    public HashMap<String,Object> findUserAndCustomerById(Long cid, Long uid);
+    public HashMap<String,Object> findUserAndCustomerById(Long id);
     public List<Customer> findAll();
     public User findUserById(Long id);
 }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@Component
+//@Component
 public class AccessTokenFilter extends ZuulFilter {
     private static Logger log = LoggerFactory.getLogger(AccessTokenFilter.class);
     @Override

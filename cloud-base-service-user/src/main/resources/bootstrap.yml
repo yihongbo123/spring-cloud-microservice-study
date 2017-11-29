@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: cloud-base-service-user
+  #默认0.1，代表收集10%的请求跟踪数据
+  sleuth:
+    sampler:
+      percentage: 1.0
   cloud:
     config:
       profile: dev

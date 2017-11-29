@@ -3,11 +3,15 @@ spring:
     name: zipkin-server
   datasource:
     schema: classpath:/mysql.sql
-    url: jdbc:mysql://172.18.44.122:3306/cloudTest?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://172.18.44.188:3306/cloudTest?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: testuser
     password: test@tgw88
     continue-on-error: true
     initialize: true
+  #表示当前程序不使用sleuth
+  sleuth:
+    annotation:
+      enabled: false
   cloud:
     stream:
       kafka:

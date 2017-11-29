@@ -1,6 +1,10 @@
 spring:
   application:
     name: cloud-service-feign
+  #默认0.1，代表收集10%的请求跟踪数据
+  sleuth:
+    sampler:
+      percentage: 1.0
   cloud:
     config:
       username: user
@@ -29,5 +33,8 @@ eureka:
     hostname: feign
 server:
   port: 8021
+
+
+
 
 

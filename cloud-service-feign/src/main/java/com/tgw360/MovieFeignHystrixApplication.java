@@ -22,10 +22,10 @@ import org.springframework.context.annotation.Bean;
 //⽤于dashboard
 @EnableCircuitBreaker
 public class MovieFeignHystrixApplication {
-    @Bean
-    public IRule ribbonRule() {
-        return new RoundRobinRule();//这里配置策略，和配置文件对应
-    }
+//    @Bean
+//    public IRule ribbonRule() {
+//        return new RoundRobinRule();//这里配置策略，和配置文件对应
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(MovieFeignHystrixApplication.class, args);

@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: cloud-base-service-customer
+  #默认0.1，代表收集10%的请求跟踪数据
+  sleuth:
+    sampler:
+      percentage: 1.0
   cloud:
     config:
       profile: dev
@@ -34,4 +38,8 @@ eureka:
 #    #如果设置在bootstrap.yml中将会导致一些不良的副作用，例如在Eureka中注册的应用名称是UNKNOWN等。
 #      enabled: false #开启健康检查（需要spring-boot-starter-actuator依赖）
     serviceUrl:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/ # 指定注册中⼼的地址
+# 指定注册中⼼的地址
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
+
+
+

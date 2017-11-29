@@ -19,14 +19,20 @@ spring:
           brokers: 172.18.44.122:9092
   application:
     name: cloud-api-gateway
+  #默认0.1，代表收集10%的请求跟踪数据
+  sleuth:
+    sampler:
+      percentage: 1.0
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8761/eureka/
   instance:
-    hostname: zuul
+    hostname: locahost
+    instance-id: ${spring.application.name}-1
 server:
   port: 8050
+
 
 

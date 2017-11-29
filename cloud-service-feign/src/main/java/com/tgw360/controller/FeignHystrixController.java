@@ -28,7 +28,7 @@ public class FeignHystrixController {
     }
     @GetMapping("feign/aa/{id}")
     public HashMap<String,Object> findUserAndCustomerById(@PathVariable("id") Long id) {
-        return messageService.findUserAndCustomerById(id,id);
+        return messageService.findUserAndCustomerById(id);
     }
     @GetMapping("feign/all")
     public List<Customer> findAll() {

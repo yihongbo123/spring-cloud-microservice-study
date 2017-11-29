@@ -39,15 +39,14 @@ public class MessageServiceImpl implements MessageService{
     }
 
     @Override
-    public HashMap<String, Object> findUserAndCustomerById(Long cid,Long uid) {
+    public HashMap<String, Object> findUserAndCustomerById(Long id) {
         try {
-//            User user = this.userFeignHystrixClient.findUserById(id);
-//            Customer customer = this.customerFeignHystrixClient.findCustomerById(id);
-            Customer customer = findByIdFeign(cid);
-            User user = userRepository.findOne(uid);
+            Customer customer = this.customerFeignHystrixClient.findCustomerById(id);
+//            User user = userRepository.findOne(id);
+            User user = this.userFeignHystrixClient.findUserById(id);
             HashMap<String, Object> map = new HashMap<>();
-            map.put("user",user);
             map.put("customer",customer);
+            map.put("user",user);
             System.out.println("被调用！！！");
             logger.info("-----<call feign)");
             return map;

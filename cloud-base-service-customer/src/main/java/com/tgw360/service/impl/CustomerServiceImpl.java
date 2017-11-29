@@ -7,6 +7,7 @@ import com.tgw360.service.CustomerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -76,7 +77,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer findByUsernameAndPassword(String username, String password) {
         return redisUtil.getValue(redisTemplate,"customer-"+username+password,Customer.class,key ->{
-            Customer customer = customerRepository.findByUsernameAndAndPassword(username, password);
+            Customer customer = customerRepository.findByUsernameAndPassword(username, password);
             redisUtil.setValue(redisTemplate,key,customer,10,TimeUnit.DAYS);
             return customer;
         });
@@ -85,12 +86,12 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer findById(Long id) {
-//        return redisUtil.getValue(redisTemplate,"customer-" + id,Customer.class,key -> {
-//            Customer customer = customerRepository.findOne(id);
-//            redisUtil.setValue(redisTemplate,key,customer,10, TimeUnit.DAYS);
-//            return customer;
-//        });
-        return customerRepository.findOne(id);
+        return redisUtil.getValue(redisTemplate,"customer-" + id,Customer.class,key -> {
+            Customer customer = customerRepository.findOne(id);
+            redisUtil.setValue(redisTemplate,key,customer,10, TimeUnit.DAYS);
+            return customer;
+        });
+//        return customerRepository.findOne(id);
 
 
     }

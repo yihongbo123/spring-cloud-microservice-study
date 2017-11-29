@@ -60,6 +60,12 @@ public class CustomerController {
 
     @GetMapping("/num")
     public String getNum(){
+        logger.info("日志打印信息 info ------->{}" ,num);
+        if (logger.isDebugEnabled()){
+            logger.debug("日志打印信息 debug ------->{}" ,num);
+        }
+        logger.warn("日志打印信息 warn ------->{}" ,num);
+        logger.error("日志打印信息 error ------->{}" ,num);
         return num;
     }
 

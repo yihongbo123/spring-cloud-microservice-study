@@ -29,8 +29,8 @@
         <module>microservice-stream-producer</module>
         <module>cloud-base-service-customer</module>
         <module>cloud-commom</module>
-        <module>cloud-service-customer</module>
         <module>cloud-service-feign-user</module>
+        <module>cloud-auth-server</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -70,6 +70,5 @@
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
 </project>

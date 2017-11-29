@@ -22,34 +22,34 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerDao customerDao;
     @Override
     public User getCustomerByAccountId(Long id) {
-//        logger.info("-----<call user>-----");
-//        String s = null;
-//        ValueOperations<String, String> ops = null;
-//        try {
-//            ops = redisTemplate.opsForValue();
-//            s = ops.get("user-" + id);
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
-//        if (s == null){
-//            User customer = customerDao.findByAccountId(id);
-//            try {
-//                String cust = objectMapper.writeValueAsString(customer);
-////                ops.set("customer" + id,cust,10, TimeUnit.SECONDS);
-//                ops.set("user-" + id,cust);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//            return customer;
-//        }
-//        try {
-//            User customer = objectMapper.readValue(s, User.class);
-//            return customer;
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            return new User();
-//        }
-        return customerDao.findByAccountId(id);
+        logger.info("-----<call user>-----");
+        String s = null;
+        ValueOperations<String, String> ops = null;
+        try {
+            ops = redisTemplate.opsForValue();
+            s = ops.get("user-" + id);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        if (s == null){
+            User customer = customerDao.findByAccountId(id);
+            try {
+                String cust = objectMapper.writeValueAsString(customer);
+//                ops.set("customer" + id,cust,10, TimeUnit.SECONDS);
+                ops.set("user-" + id,cust);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return customer;
+        }
+        try {
+            User customer = objectMapper.readValue(s, User.class);
+            return customer;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new User();
+        }
+//        return customerDao.findByAccountId(id);
     }
 
     @Override

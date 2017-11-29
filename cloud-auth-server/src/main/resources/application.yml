@@ -1,0 +1,47 @@
+#服务器配置
+server:
+  #端口
+  port: 8020
+
+#服务器发现注册配置
+eureka:
+  client:
+    serviceUrl:
+      #配置服务中心(可配置多个,用逗号隔开)
+      defaultZone: http://172.18.44.122:8761/eureka,https://172.18.44.123:8761/eureka
+
+#spring配置
+spring:
+  #应用配置
+  application:
+    #名称: OAuth2认证授权服务
+    name: cloud-auth-server
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://172.18.44.188:3306/cloudTest?useUnicode=true&characterEncoding=utf8
+    username: testuser
+    password: test@tgw88
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    cluster:
+      nodes:
+        - 172.18.44.122:6381
+        - 172.18.44.122:6382
+        - 172.18.44.123:6381
+  jpa:
+    hibernate:
+#      DefaultNamingStrategy这个直接映射，不会做过多的处理（前提没有设置@Table，@Column等属性的时候）。
+#      ImprovedNamingStrategy 表名，字段为小写，当有大写字母的时候会转换为分隔符号“_”。
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      #如果数据库没有表就创建，有数据表如果结构发生就更新
+      ddl-auto: update
+
+
+#安全配置
+security:
+  #oauth2配置
+  oauth2:
+    resource:
+      filter-order: 3
+

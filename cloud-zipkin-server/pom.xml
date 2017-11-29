@@ -11,7 +11,7 @@
 
     <artifactId>cloud-zipkin-server</artifactId>
     <dependencies>
-        <!--整合spring cloud stream-->
+        <!--整合spring cloud stream,以消息中间件的形式订阅跟踪信息-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
@@ -21,10 +21,6 @@
             <artifactId>spring-cloud-starter-stream-kafka</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin-server</artifactId>
-        </dependency>
         <!--zipkin的ui界面依赖-->
         <dependency>
             <groupId>io.zipkin.java</groupId>

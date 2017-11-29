@@ -25,6 +25,8 @@ public interface UserFeignHystrixClient {
     @RequestMapping(value = "/all",method = RequestMethod.GET)
 //    @RequestLine("POST /")
     public List<User> findUserAll();
+    @RequestMapping(value = "num", method = RequestMethod.GET)
+    public String getNum();
     /**
      * 这边采取了和Spring Cloud官方文档相同的做法，将fallback类作为内部类放入Feign的接口中，当然也可以单独写一个fallback类。
      *
@@ -55,6 +57,11 @@ public interface UserFeignHystrixClient {
             UserHystrixClientFallback.LOGGER.info("异常发生，进入fallback方法");
             ArrayList<User> users = new ArrayList<User>();
             return users;
+        }
+
+        @Override
+        public String getNum() {
+            return null;
         }
     }
 }
