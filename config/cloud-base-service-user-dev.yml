@@ -31,10 +31,10 @@ spring:
 
 master:
   datasource:
-    url: jdbc:mysql://172.18.44.188:3306/cloudTest?useUnicode=true&characterEncoding=utf8
-    username: testuser
-    password: test@tgw88
-    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:postgresql://127.0.0.1:26257/bank?sslmode=disable
+    username: maxroach
+    password:
+    driverClassName: org.postgresql.Driver
 
 security:
   user:
