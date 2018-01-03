@@ -29,7 +29,7 @@ spring:
 #    # leaseRenewalIntervalInSeconds，表示eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance。除此之外，如果该instance实现了HealthCheckCallback，并决定让自己unavailable的话，则该instance也不会接收到流量。默认30秒
 #    lease-renewal-interval-out-seconds: 5
 
-master:
+mapper:
   datasource:
     url: jdbc:postgresql://172.18.44.120:26257/springcloud?sslmode=disable
     username: root
