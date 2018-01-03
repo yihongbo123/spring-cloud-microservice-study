@@ -14,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" filepath="$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-crdb.iml" filepath="$PROJECT_DIR$/cloud-service-crdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" filepath="$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-service-pgsql.iml" filepath="$PROJECT_DIR$/cloud-service-pgsql.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-producer/cloud-stream-kafka-producer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-producer/cloud-stream-kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" filepath="$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" />
