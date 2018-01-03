@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/aaaaaaaasdfsdf/aaaaaaaasdfsdf.iml" filepath="$PROJECT_DIR$/aaaaaaaasdfsdf/aaaaaaaasdfsdf.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" filepath="$PROJECT_DIR$/cloud-api-gateway/cloud-api-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-auth-server/cloud-auth-server.iml" filepath="$PROJECT_DIR$/cloud-auth-server/cloud-auth-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-base-service-customer/cloud-base-service-customer.iml" filepath="$PROJECT_DIR$/cloud-base-service-customer/cloud-base-service-customer.iml" />
@@ -13,7 +12,9 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-hystrix-turbine/cloud-hystrix-turbine.iml" filepath="$PROJECT_DIR$/cloud-hystrix-turbine/cloud-hystrix-turbine.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent.iml" filepath="$PROJECT_DIR$/cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" filepath="$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-service-crdb.iml" filepath="$PROJECT_DIR$/cloud-service-crdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" filepath="$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-service-pgsql.iml" filepath="$PROJECT_DIR$/cloud-service-pgsql.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-producer/cloud-stream-kafka-producer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-producer/cloud-stream-kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" filepath="$PROJECT_DIR$/cloud-zipkin-server/cloud-zipkin-server.iml" />

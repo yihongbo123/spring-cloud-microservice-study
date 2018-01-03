@@ -17,7 +17,6 @@ import javax.sql.DataSource;
 @Configuration
 // 扫描 Mapper 接口并容器管理
 @MapperScan(basePackages = MasterDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "masterSqlSessionFactory")
-@RefreshScope
 //@MapperScan(basePackages = "com.itmuch.cloud.study.dao.master", sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MasterDataSourceConfig {
 

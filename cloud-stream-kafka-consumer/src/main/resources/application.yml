@@ -7,8 +7,8 @@ spring:
       instanceIndex: 0
       kafka:
         binder:
-          brokers: 172.18.44.122:9092
-          zk-nodes: 172.18.44.122:2181
+          brokers: 172.18.44.122:19092
+          zk-nodes: 172.18.44.122:2880
           minPartitionCount: 1
           autoCreateTopics: true
           autoAddPartitions: true

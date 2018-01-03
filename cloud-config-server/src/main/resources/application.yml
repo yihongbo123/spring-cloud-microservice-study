@@ -7,20 +7,24 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yihongbo123/spring-cloud-microservice-study.git     # 配置git仓库的地址
-          search-paths: config                           # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username: 757430916@qq.com                                             # git仓库的账号
-          password: bobo52464251
+#          uri: https://github.com/yihongbo123/spring-cloud-microservice-study.git     # 配置git仓库的地址
+          uri: http://172.17.14.150/fintech/configs.git     # 配置git仓库的地址
+#          search-paths: config                           # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: yihb                                             # git仓库的账号
+          password: 52464251
     stream:
       kafka:
         binder:
-          zk-nodes: 172.18.44.122:2181
-          brokers: 172.18.44.122:9092
+          zk-nodes: 172.17.14.145:2880,172.17.14.146:2880,172.17.14.147:2880
+          brokers: 172.17.14.145:9092,172.17.14.146:9092,172.17.14.147:9092
 eureka:
+  instance:
+    hostname: 172.17.14.146
+    instance-id: ${spring.application.name}-${eureka.instance.hostname}:${server.port}
   client:
     serviceUrl:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
-
+      defaultZone: http://172.17.14.145:8761/eureka/,http://172.17.14.146:8761/eureka/
+#      defaultZone: http://172.17.14.145:8761/eureka/
 security:
   user:
     name: user

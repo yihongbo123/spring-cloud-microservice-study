@@ -1,6 +1,9 @@
 package com.tgw360.controller;
 
+import com.netflix.discovery.converters.Auto;
+import com.tgw360.domain.Accounts;
 import com.tgw360.domain.User;
+import com.tgw360.service.AccountsService;
 import com.tgw360.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,8 +29,10 @@ public class UserController {
 //    private DiscoveryClient discoveryClient;
 //    @Autowired
 //    private UserRepository userRepository;
-    @Autowired
+//    @Autowired
     private CustomerService customerService;
+    @Autowired
+    private AccountsService accountsService;
 
     @Value("${aa.value}")
     private String num;
@@ -55,6 +60,11 @@ public class UserController {
 //        } catch (InterruptedException e) {
 //        }
         return customerService.getCustomerByAccountId(id);
+    }
+
+    @GetMapping("/Accounts")
+    public List<Accounts> getAccounts(){
+        return accountsService.getAll();
     }
 
     @GetMapping("/all")

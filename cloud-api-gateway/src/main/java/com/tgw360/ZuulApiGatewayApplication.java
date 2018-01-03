@@ -1,9 +1,7 @@
 package com.tgw360;
 
-import com.tgw360.filter.AccessTokenFilter;
 import com.tgw360.filter.ErrorFilter;
-import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RoundRobinRule;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -12,6 +10,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 使用@EnableZuulProxy注解激活zuul。
@@ -36,6 +36,7 @@ public class ZuulApiGatewayApplication {
     public ErrorFilter errorFilter(){
         return new ErrorFilter();
     }
+
 
     public static void main(String[] args) {
         SpringApplication.run(ZuulApiGatewayApplication.class, args);
