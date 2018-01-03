@@ -31,8 +31,8 @@ spring:
 
 master:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:26257/bank?sslmode=disable
-    username: maxroach
+    url: jdbc:postgresql://172.18.44.120:26257/springcloud?sslmode=disable
+    username: root
     password:
     driverClassName: org.postgresql.Driver
 
