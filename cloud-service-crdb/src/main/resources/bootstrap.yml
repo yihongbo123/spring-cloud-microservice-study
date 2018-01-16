@@ -1,0 +1,57 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: cloud-service-crdb
+  #默认0.1，代表收集10%的请求跟踪数据
+  sleuth:
+    sampler:
+      percentage: 1.0
+  cloud:
+    config:
+      name: ${spring.application.name},common
+      profile: dev
+      label: master
+      discovery:
+        # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
+        enabled: true
+        # 指定config server在服务发现中的serviceId，默认为：configserver
+        serviceId: cloud-config-server
+      username: user
+      password: 123456
+      #配置文件加载失败的快速响应
+      fail-fast: true
+    stream:
+      kafka:
+        binder:
+          zk-nodes: 172.18.44.120:2880
+          brokers: 172.18.44.120:9092
+    # 开启消息跟踪
+    bus:
+      trace:
+        enabled: true
+
+#management:
+#  security:
+#     enabled: false
+
+eureka:
+  client:
+#    healthcheck:
+#      enabled: true #开启健康检查（需要spring-boot-starter-actuator依赖）
+    serviceUrl:
+#      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/ # 指定注册中⼼的地址
+#      defaultZone: http://172.18.44.120:8761/eureka/，http://172.18.44.128:8761/eureka/ # 指定注册中⼼的地址
+      defaultZone: http://127.0.0.1:8761/eureka/ # 指定注册中⼼的地址
+mapper:
+  datasource:
+    url: jdbc:postgresql://172.18.44.120:26260/springcloud?sslmode=required
+    username: yihongbo
+    password: 123456
+    driverClassName: org.postgresql.Driver
+#  datasource:
+#    url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    username: testuser
+#    password: test@tgw88
+#    driver-class-name: com.mysql.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
