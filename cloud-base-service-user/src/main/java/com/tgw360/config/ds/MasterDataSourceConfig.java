@@ -17,23 +17,23 @@ import javax.sql.DataSource;
 @Configuration
 // 扫描 Mapper 接口并容器管理
 @MapperScan(basePackages = MasterDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "masterSqlSessionFactory")
-//@MapperScan(basePackages = "com.itmuch.cloud.study.dao.master", sqlSessionFactoryRef = "masterSqlSessionFactory")
+//@MapperScan(basePackages = "com.itmuch.cloud.study.dao.mapper", sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MasterDataSourceConfig {
 
-    // 精确到 master 目录，以便跟其他数据源隔离
-    static final String PACKAGE = "com.tgw360.dao.master";
-    static final String MAPPER_LOCATION = "classpath:mapper/master/*.xml";
+    // 精确到 mapper 目录，以便跟其他数据源隔离
+    static final String PACKAGE = "com.tgw360.dao.mapper";
+    static final String MAPPER_LOCATION = "classpath:mapper/mapper/*.xml";
 
-    @Value("${master.datasource.url}")
+    @Value("${mapper.datasource.url}")
     private String url;
 
-    @Value("${master.datasource.username}")
+    @Value("${mapper.datasource.username}")
     private String user;
 
-    @Value("${master.datasource.password}")
+    @Value("${mapper.datasource.password}")
     private String password;
 
-    @Value("${master.datasource.driverClassName}")
+    @Value("${mapper.datasource.driverClassName}")
     private String driverClass;
 
     @Bean(name = "masterDataSource")

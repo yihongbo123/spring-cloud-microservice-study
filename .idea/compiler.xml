@@ -15,6 +15,7 @@
         <module name="cloud-hystrix-dashboard" />
         <module name="cloud-hystrix-turbine" />
         <module name="cloud-register-server" />
+        <module name="cloud-service-crdb" />
         <module name="cloud-service-feign" />
         <module name="cloud-stream-kafka-consumer" />
         <module name="cloud-stream-kafka-producer" />
@@ -42,6 +43,7 @@
       <module name="cloud-hystrix-turbine" target="1.8" />
       <module name="cloud-parent" target="1.8" />
       <module name="cloud-register-server" target="1.8" />
+      <module name="cloud-service-crdb" target="1.8" />
       <module name="cloud-service-feign" target="1.8" />
       <module name="cloud-stream-kafka-consumer" target="1.8" />
       <module name="cloud-stream-kafka-producer" target="1.8" />

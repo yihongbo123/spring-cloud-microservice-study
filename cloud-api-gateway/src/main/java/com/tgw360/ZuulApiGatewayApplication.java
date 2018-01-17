@@ -32,10 +32,10 @@ public class ZuulApiGatewayApplication {
 //    public AccessTokenFilter accessTokenFilter(){
 //        return new AccessTokenFilter();
 //    }
-    @Bean
-    public ErrorFilter errorFilter(){
-        return new ErrorFilter();
-    }
+//    @Bean
+//    public ErrorFilter errorFilter(){
+//        return new ErrorFilter();
+//    }
 
 
     public static void main(String[] args) {

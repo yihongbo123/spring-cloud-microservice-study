@@ -1,7 +1,7 @@
 //package com.tgw360.service.impl;
 //
 //import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.tgw360.dao.master.CustomerDao;
+//import com.tgw360.dao.mapper.CustomerDao;
 //import com.tgw360.domain.User;
 //import com.tgw360.service.CustomerService;
 //import org.apache.log4j.Logger;
