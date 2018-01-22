@@ -1,5 +1,6 @@
 package com.tgw360.fallback;
 
+import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
 import org.springframework.cloud.netflix.zuul.filters.route.ZuulFallbackProvider;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -16,7 +17,7 @@ import java.nio.charset.Charset;
  * Created by 易弘博 on 2018/1/17 9:42
  */
 @Component
-public class UserServiceFallbackProvider implements ZuulFallbackProvider {
+public class UserServiceFallbackProvider implements FallbackProvider {
 
     @Override
     public String getRoute() {
@@ -59,5 +60,10 @@ public class UserServiceFallbackProvider implements ZuulFallbackProvider {
                 return headers;
             }
         };
+    }
+
+    @Override
+    public ClientHttpResponse fallbackResponse(Throwable cause) {
+        return fallbackResponse();
     }
 }

@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-hystrix-turbine/cloud-hystrix-turbine.iml" filepath="$PROJECT_DIR$/cloud-hystrix-turbine/cloud-hystrix-turbine.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent.iml" filepath="$PROJECT_DIR$/cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" filepath="$PROJECT_DIR$/cloud-register-server/cloud-register-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-service-admin.iml" filepath="$PROJECT_DIR$/cloud-service-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-crdb/cloud-service-crdb.iml" filepath="$PROJECT_DIR$/cloud-service-crdb/cloud-service-crdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" filepath="$PROJECT_DIR$/cloud-service-feign/cloud-service-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" filepath="$PROJECT_DIR$/cloud-stream-kafka-consumer/cloud-stream-kafka-consumer.iml" />

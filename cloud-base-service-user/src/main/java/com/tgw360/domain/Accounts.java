@@ -1,5 +1,7 @@
 package com.tgw360.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Accounts {
     private Integer id;
     private Integer balance;

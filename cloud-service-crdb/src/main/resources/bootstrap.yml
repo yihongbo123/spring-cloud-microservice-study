@@ -41,13 +41,18 @@ eureka:
 #      enabled: true #开启健康检查（需要spring-boot-starter-actuator依赖）
     serviceUrl:
 #      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/ # 指定注册中⼼的地址
-      defaultZone: http://172.18.44.120:8761/eureka/，http://172.18.44.128:8761/eureka/ # 指定注册中⼼的地址
+      defaultZone: http://172.18.44.120:8761/eureka/,http://172.18.44.128:8761/eureka/ # 指定注册中⼼的地址
 #      defaultZone: http://127.0.0.1:8761/eureka/ # 指定注册中⼼的地址
+  instance:
+    hostname: 172.18.42.65
+    instance-id: ${spring.application.name}-${eureka.instance.hostname}:${server.port}
+
 mapper:
   datasource:
-    url: jdbc:postgresql://172.18.44.120:26260/springcloud?sslmode=required
-    username: yihongbo
-    password: 123456
+    url: jdbc:postgresql://172.18.44.120:26260/springcloud?sslcert=C:\\Users\\ASUS\\Desktop\\aa\\root.der&sslkey=C:\\Users\\ASUS\\Desktop\\aa\\root.key.pk8&sslmode=require&ssl=true
+#    url: jdbc:postgresql://172.18.44.120:26260/springcloud?sslmode=required
+    username: root
+    password:
     driverClassName: org.postgresql.Driver
 #  datasource:
 #    url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8&useSSL=false

@@ -1,5 +1,6 @@
 package com.tgw360.controller;
 
+import com.tgw360.entity.Accounts;
 import com.tgw360.entity.User;
 import com.tgw360.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/user")
+//@RestController
+//@RequestMapping("/user")
 public class UserController {
     @Autowired
     private UserService userService;
-    @Value("${aaa.aaa.aaa}")
+//    @Value("${aaa.aaa.aaa}")
     private String aaa;
-    @Value("${bbb.bbb.bbb}")
+//    @Value("${bbb.bbb.bbb}")
     private String bbb;
 
     @GetMapping("/save")
