@@ -1,10 +1,8 @@
 spring:
   redis:
     cluster:
-      nodes:
-        - 172.18.44.122:6381
-        - 172.18.44.122:6382
-        - 172.18.44.123:6381
+      nodes: 172.18.44.120:6380,172.18.44.128:6380,172.18.44.123:6380,172.18.44.120:6381,172.18.44.128:6381,172.18.44.123:6381
+
 #  jpa:
 #    generate-ddl: false
 #    show-sql: true
@@ -29,12 +27,18 @@ spring:
 #    # leaseRenewalIntervalInSeconds，表示eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance。除此之外，如果该instance实现了HealthCheckCallback，并决定让自己unavailable的话，则该instance也不会接收到流量。默认30秒
 #    lease-renewal-interval-out-seconds: 5
 
+#mapper:
+#  datasource:
+#    url: jdbc:postgresql://127.0.0.1:26257/bank?sslmode=disable
+#    username: maxroach
+#    password:
+#    driverClassName: org.postgresql.Driver
 mapper:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:26257/bank?sslmode=disable
-    username: maxroach
-    password:
-    driverClassName: org.postgresql.Driver
+    url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8
+    username: testuser
+    password: test@tgw88
+    driverClassName: com.mysql.jdbc.Driver
 
 security:
   user:
