@@ -1,10 +1,9 @@
 package com.tgw360.controller;
 
-import com.netflix.discovery.converters.Auto;
 import com.tgw360.domain.Accounts;
 import com.tgw360.domain.User;
 import com.tgw360.service.AccountsService;
-import com.tgw360.service.CustomerService;
+import com.tgw360.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -29,8 +28,8 @@ public class UserController {
 //    private DiscoveryClient discoveryClient;
 //    @Autowired
 //    private UserRepository userRepository;
-//    @Autowired
-    private CustomerService customerService;
+    @Autowired
+    private UserService userService;
     @Autowired
     private AccountsService accountsService;
 
@@ -46,20 +45,10 @@ public class UserController {
      * @param id
      * @return user信息
      */
-//    @GetMapping("/{id}")
-//    public User findById(@PathVariable Long id) {
-//        User findOne = this.userRepository.findOne(id);
-//        return findOne;
-//    }
-    @GetMapping("/{id}")
-//    @PostMapping("/{id}")
-    public User findCustomerByAccountId(@PathVariable("id") Long id){
-        System.out.println("被调用:" + UUID.randomUUID().toString());
-//        try {
-//            Thread.sleep(1000);
-//        } catch (InterruptedException e) {
-//        }
-        return customerService.getCustomerByAccountId(id);
+    @GetMapping("user/{id}")
+    public User findById(@PathVariable Long id) {
+        User findOne = this.userService.getUserByAccountId(id);
+        return findOne;
     }
 
     @GetMapping("/Accounts")
@@ -70,7 +59,7 @@ public class UserController {
     @GetMapping("/all")
     public List<User> findAll(){
 
-        return customerService.getAll();
+        return userService.getAll();
     }
 
     @GetMapping("/num")

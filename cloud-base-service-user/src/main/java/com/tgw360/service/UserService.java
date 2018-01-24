@@ -4,7 +4,7 @@ import com.tgw360.domain.User;
 
 import java.util.List;
 
-public interface CustomerService {
-    public User getCustomerByAccountId(Long id);
+public interface UserService {
+    public User getUserByAccountId(Long id);
     public List<User> getAll();
 }

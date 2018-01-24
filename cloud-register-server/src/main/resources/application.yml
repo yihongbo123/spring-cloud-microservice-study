@@ -9,8 +9,8 @@ eureka:
     fetchRegistry: false
 #    serviceUrl:
 #      defaultZone: http://172.17.14.145:8761/eureka/
-#  server:
-#    enable-self-preservation: false
+  server:
+    enable-self-preservation: false
 #    eviction-interval-timer-out-ms: 4000
 ---
 spring:

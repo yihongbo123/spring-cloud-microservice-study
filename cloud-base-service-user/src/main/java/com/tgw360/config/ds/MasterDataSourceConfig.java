@@ -21,8 +21,8 @@ import javax.sql.DataSource;
 public class MasterDataSourceConfig {
 
     // 精确到 mapper 目录，以便跟其他数据源隔离
-    static final String PACKAGE = "com.tgw360.dao.mapper";
-    static final String MAPPER_LOCATION = "classpath:mapper/mapper/*.xml";
+    static final String PACKAGE = "com.tgw360.dao.master";
+    static final String MAPPER_LOCATION = "classpath:mapper/master/*.xml";
 
     @Value("${mapper.datasource.url}")
     private String url;

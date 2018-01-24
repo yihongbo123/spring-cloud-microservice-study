@@ -32,6 +32,7 @@
         <module>cloud-stream-kafka-producer</module>
         <module>cloud-stream-kafka-consumer</module>
         <module>cloud-service-crdb</module>
+        <module>cloud-service-admin</module>
     </modules>
     <packaging>pom</packaging>
 

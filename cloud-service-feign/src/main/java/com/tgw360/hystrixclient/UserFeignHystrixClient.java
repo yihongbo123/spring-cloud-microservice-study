@@ -19,7 +19,7 @@ import java.util.List;
  */
 @FeignClient(name = "cloud-base-service-user", fallback = UserFeignHystrixClient.UserHystrixClientFallback.class)
 public interface UserFeignHystrixClient {
-    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "user/{id}",method = RequestMethod.GET)
 //    @RequestLine("POST /")
     public User findUserById(@RequestParam("id") Long id);
     @RequestMapping(value = "/all",method = RequestMethod.GET)

@@ -11,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/cloud-hystrix-dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-hystrix-turbine" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-register-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-crdb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-stream-kafka-consumer" charset="UTF-8" />
@@ -25,5 +26,6 @@
     <file url="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-with-hystrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-stream-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-stream-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sdfsdf" charset="UTF-8" />
   </component>
 </project>

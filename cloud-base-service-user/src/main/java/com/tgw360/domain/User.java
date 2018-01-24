@@ -8,7 +8,6 @@ import java.lang.management.ManagementFactory;
 public class User {
     private Long id;
     private Long createdAt;
-    private Long LastModified;
     private String email;
     private String firstName;
     private String lastName;
@@ -23,9 +22,6 @@ public class User {
         return createdAt;
     }
 
-    public Long getLastModified() {
-        return LastModified;
-    }
 
     public String getEmail() {
         return email;
@@ -51,9 +47,6 @@ public class User {
         this.createdAt = createdAt;
     }
 
-    public void setLastModified(Long lastModified) {
-        LastModified = lastModified;
-    }
 
     public void setEmail(String email) {
         this.email = email;
