@@ -1,2 +1,71 @@
-aa:
+spring:
+  datasource:
+    url: jdbc:postgresql://172.18.44.120:26259/springcloud?sslmode=disable
+    username: root
+    password: 
+    driver-class-name: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+	
+  #默认0.1，代表收集10%的请求跟踪数据
+  sleuth:
+    sampler:
+      percentage: 1.0
+  cloud:
+    stream:
+      kafka:
+        bindings:
+          dividendFinancingHis_input:
+            consumer:
+              enableDlq: true
+        binder:
+          minPartitionCount: 1
+          autoCreateTopics: true
+          autoAddPartitions: true
+      instance-count: 1
+      instance-index: 0
+      bindings:
+#        # 快照详情，分时线，成交明细
+        Quote_Snapshot_Stock_input:
+          destination: Quote.Snapshot.Stock
+          group: coretheme-redis2        
+          consumer:
+            concurrency: 1
+            partitioned: false
+#     k线数据
+        KLineData_input :
+          destination: Quote.His.Kline
+          group: klin-redis
+          consumer:
+            concurrency: 1
+            partitioned: false
+
+#   代码表
+        QuoteBaseDataSecuCodeList_input:
+          destination: Quote.BaseData.SecuCodeList
+          group: secucodelist-redis
+          consumer:
+            concurrency: 1
+            partitioned: false
+
+#    通知
+        QuoteBaseDataNotify_input:
+          destination: Quote.BaseData.Notify
+          group: quote-base-data-notify-redis
+          consumer:
+            concurrency: 1
+            partitioned: false
+
+#         指数
+        QuoteSnapshotIndex_input:
+          destination: Quote.Snapshot.index
+          group: quote-base-data-notify-redis1
+          consumer:
+            concurrency: 1
+            partitioned: false
+    # 开启消息跟踪
+    bus:
+      trace:
+        enabled: true
+
+aa: 
   aa: 123456
