@@ -5,7 +5,6 @@ spring:
     password: 
     driver-class-name: org.postgresql.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-	
   #默认0.1，代表收集10%的请求跟踪数据
   sleuth:
     sampler:
@@ -24,14 +23,12 @@ spring:
       instance-count: 1
       instance-index: 0
       bindings:
-#        # 快照详情，分时线，成交明细
         Quote_Snapshot_Stock_input:
           destination: Quote.Snapshot.Stock
           group: coretheme-redis2        
           consumer:
             concurrency: 1
             partitioned: false
-#     k线数据
         KLineData_input :
           destination: Quote.His.Kline
           group: klin-redis
@@ -39,7 +36,6 @@ spring:
             concurrency: 1
             partitioned: false
 
-#   代码表
         QuoteBaseDataSecuCodeList_input:
           destination: Quote.BaseData.SecuCodeList
           group: secucodelist-redis
@@ -47,7 +43,6 @@ spring:
             concurrency: 1
             partitioned: false
 
-#    通知
         QuoteBaseDataNotify_input:
           destination: Quote.BaseData.Notify
           group: quote-base-data-notify-redis
@@ -55,7 +50,6 @@ spring:
             concurrency: 1
             partitioned: false
 
-#         指数
         QuoteSnapshotIndex_input:
           destination: Quote.Snapshot.index
           group: quote-base-data-notify-redis1
