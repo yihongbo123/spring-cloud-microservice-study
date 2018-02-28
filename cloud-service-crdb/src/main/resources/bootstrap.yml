@@ -44,20 +44,40 @@ eureka:
       defaultZone: http://172.18.44.120:8761/eureka/,http://172.18.44.128:8761/eureka/ # 指定注册中⼼的地址
 #      defaultZone: http://127.0.0.1:8761/eureka/ # 指定注册中⼼的地址
   instance:
-    hostname: 172.18.42.65
+    hostname: 172.18.42.34
     instance-id: ${spring.application.name}-${eureka.instance.hostname}:${server.port}
 
 mapper:
   datasource:
 #    url: jdbc:postgresql://172.18.44.120:26260/springcloud?sslcert=C:\\Users\\ASUS\\Desktop\\aa\\root.der&sslkey=C:\\Users\\ASUS\\Desktop\\aa\\root.key.pk8&sslmode=require&ssl=true
     url: jdbc:postgresql://172.18.44.120:26259/springcloud?sslmode=disable
+#    url: jdbc:postgresql://172.17.14.158:26258/oauthcenter?sslcert=C:\\Users\\ASUS\\Desktop\\aa\\oyxf.der&sslkey=C:\\Users\\ASUS\\Desktop\\aa\\oyxf.key.pk8&sslmode=require&ssl=true
 #    url: jdbc:postgresql://172.18.44.120:26260/springcloud?sslmode=required
     username: root
+
     password:
     driverClassName: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
 #  datasource:
 #    url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8&useSSL=false
 #    username: testuser
 #    password: test@tgw88
 #    driver-class-name: com.mysql.jdbc.Driver
 #    type: com.alibaba.druid.pool.DruidDataSource
+management:
+  security:
+     enabled: false
+
+info:
+  aaa:
+    name: xxx
+    email: xxx@qq.com
+  bbb:
+    age: 25
+    hobbies: running
+  build:
+    artifact: "@project.artifactId@"
+    name: "@project.name@"
+    version: "@project.version@"
+endpoints.shutdown.enabled: true

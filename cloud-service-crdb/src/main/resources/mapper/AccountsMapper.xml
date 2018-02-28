@@ -12,6 +12,10 @@
         from accounts
         where id = #{id}
     </select>
+    <select id="finduser" resultType="java.util.Map" parameterType="java.lang.Integer">
+        select *
+        from users where userid = 24;
+    </select>
     <select id="findAll" resultMap="BaseResultMap">
         select *
         from accounts

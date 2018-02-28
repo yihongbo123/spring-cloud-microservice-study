@@ -4,6 +4,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.mvc.LastModified;
 
 import java.lang.management.ManagementFactory;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 public class User {
     private Long id;
@@ -12,7 +14,15 @@ public class User {
     private String firstName;
     private String lastName;
     private Long accountId;
+    private Date localDateTime;
 
+    public Date getLocalDateTime() {
+        return localDateTime;
+    }
+
+    public void setLocalDateTime(Date localDateTime) {
+        this.localDateTime = localDateTime;
+    }
 
     public Long getId() {
         return id;

@@ -8,6 +8,8 @@
         <result column="first_name" property="firstName" />
         <result column="last_name" property="lastName" />
         <result column="account_id" property="accountId" />
+        <result column="local_date_time" property="localDateTime" />
+
     </resultMap>
 
 

@@ -21,7 +21,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableZuulProxy
 @EnableEurekaClient
+@RestController
 public class ZuulApiGatewayApplication {
+    @Value("${aa.aa}")
+    private String aa;
 //    @Bean
 //    public IRule ribbonRule() {
 //
@@ -46,5 +49,10 @@ public class ZuulApiGatewayApplication {
     @ConfigurationProperties("zuul")
     public ZuulProperties zuulProperties(){
         return new ZuulProperties();
+    }
+
+    @RequestMapping("aa")
+    public String aa(){
+        return aa;
     }
 }

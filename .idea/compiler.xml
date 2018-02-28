@@ -18,6 +18,7 @@
         <module name="cloud-service-admin" />
         <module name="cloud-service-crdb" />
         <module name="cloud-service-feign" />
+        <module name="cloud-service-test" />
         <module name="cloud-stream-kafka-consumer" />
         <module name="cloud-stream-kafka-producer" />
         <module name="cloud-zipkin-server" />
@@ -47,6 +48,7 @@
       <module name="cloud-service-admin" target="1.8" />
       <module name="cloud-service-crdb" target="1.8" />
       <module name="cloud-service-feign" target="1.8" />
+      <module name="cloud-service-test" target="1.8" />
       <module name="cloud-stream-kafka-consumer" target="1.8" />
       <module name="cloud-stream-kafka-producer" target="1.8" />
       <module name="cloud-zipkin-server" target="1.8" />
@@ -60,7 +62,6 @@
       <module name="microservice-consumer-movie-ribbon-with-hystrix" target="1.8" />
       <module name="microservice-stream-consumer" target="1.8" />
       <module name="microservice-stream-producer" target="1.8" />
-      <module name="sdfsdf" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
