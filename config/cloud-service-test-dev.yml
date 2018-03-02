@@ -1,0 +1,4 @@
+eureka:
+  instance:
+    hostname: 172.17.14.152
+    instance-id: ${spring.application.name}-${eureka.instance.hostname}:${server.port}
