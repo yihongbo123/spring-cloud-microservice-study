@@ -2,6 +2,8 @@ package com.tgw360.controller;
 
 import com.tgw360.entity.Bar;
 import com.tgw360.mapper.BarMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +26,7 @@ import java.util.List;
 public class BarController {
     @Autowired
     private BarMapper barMapper;
+    private final Logger logger = LoggerFactory.getLogger(BarController.class);
     @GetMapping("/{code}/{begin}/{end}")
     public List<Bar> findByCode(@PathVariable String code,@PathVariable String begin,@PathVariable String end){
         try {
@@ -41,5 +44,12 @@ public class BarController {
             e.printStackTrace();
             return null;
         }
+    }
+
+    @GetMapping("test")
+    public String test(){
+        logger.info("info--------------------------------------------------");
+        logger.debug("debug--------------------------------------------------");
+        return "success";
     }
 }
