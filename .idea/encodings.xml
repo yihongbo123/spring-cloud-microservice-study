@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-api-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-auth-server" charset="UTF-8" />
@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/cloud-register-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-crdb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service-elasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-stream-kafka-consumer" charset="UTF-8" />
@@ -27,5 +28,6 @@
     <file url="file://$PROJECT_DIR$/microservice-consumer-movie-ribbon-with-hystrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-stream-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-stream-producer" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -35,6 +35,12 @@ server:
   port: 8021
 
 
+#Dalston.SR3版本,spring cloud是默认关闭Hystrix的断路器功能
+feign:
+  hystrix:
+    enabled: true
+
+
 
 
 

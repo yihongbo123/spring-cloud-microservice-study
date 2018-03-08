@@ -17,6 +17,8 @@
         <module name="cloud-register-server" />
         <module name="cloud-service-admin" />
         <module name="cloud-service-crdb" />
+        <module name="cloud-service-elasticsearch" />
+        <module name="cloud-service-elaticsearch" />
         <module name="cloud-service-feign" />
         <module name="cloud-service-test" />
         <module name="cloud-stream-kafka-consumer" />
@@ -47,6 +49,8 @@
       <module name="cloud-register-server" target="1.8" />
       <module name="cloud-service-admin" target="1.8" />
       <module name="cloud-service-crdb" target="1.8" />
+      <module name="cloud-service-elasticsearch" target="1.8" />
+      <module name="cloud-service-elaticsearch" target="1.8" />
       <module name="cloud-service-feign" target="1.8" />
       <module name="cloud-service-test" target="1.8" />
       <module name="cloud-stream-kafka-consumer" target="1.8" />
