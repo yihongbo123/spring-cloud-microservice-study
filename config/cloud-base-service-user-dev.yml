@@ -37,7 +37,7 @@ mapper:
   datasource:
     url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8
     username: testuser
-    password: test@tgw88
+    password: testuser
     driverClassName: com.mysql.jdbc.Driver
 
 security:
