@@ -11,12 +11,12 @@ ribbon:
   #请求连接的超时时间
   ConnectTimeout: 1000
   #请求处理的超时时间
-  ReadTimeout: 5000
+  ReadTimeout: 1
 
   #对所有操作请求都进行重试
   OkToRetryOnAllOperations: false
   #切换实例的重试次数
-  MaxAutoRetriesNextServer: 2
+  MaxAutoRetriesNextServer: 1
   #对当前实例的重试次数
   MaxAutoRetries: 1
 
