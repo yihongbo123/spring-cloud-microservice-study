@@ -20,6 +20,7 @@ spring:
     loadbalancer:
       retry:
       #该参数用来开启重试的机制
+
         enabled: true
 
     # 此处，preferIpAddress不设置或者设为false，不能设为true，否则影响turbine的测试。turbine存在的问题：eureka.instance.hostname一致时只能检测到一个节点，会造成turbine数据不完整
