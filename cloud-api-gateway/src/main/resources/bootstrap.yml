@@ -14,9 +14,9 @@ spring:
       password: 123456
       #配置文件加载失败的快速响应
       fail-fast: true
-      name: cloud-api-gateway,cloud-stream-market-redis
+      name: cloud-api-gateway
       profile: dev
-      label: tuoxiaoyu
+      label: master
     stream:
       kafka:
         binder:
@@ -30,15 +30,19 @@ spring:
     sampler:
       percentage: 0.1
 
+
 eureka:
   client:
     serviceUrl:
 #      defaultZone: http://172.17.14.145:8761/eureka/,http://172.17.14.146:8761/eureka/
-#      defaultZone: http://127.0.0.1:8761/eureka/
-      defaultZone: http://172.18.44.120:8761/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
+#      defaultZone: http://172.18.44.120:8761/eureka/
   instance:
-    hostname: 172.18.42.65
+    hostname: 172.18.42.34
     instance-id: ${spring.application.name}-${eureka.instance.hostname}:${server.port}
+management:
+  security:
+    enabled: false
 
 
 

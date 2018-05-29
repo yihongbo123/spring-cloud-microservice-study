@@ -8,6 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.cloud.netflix.zuul.EnableZuulServer;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,9 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableZuulProxy
 @EnableEurekaClient
-@RestController
 public class ZuulApiGatewayApplication {
-    @Value("${aa.aa}")
+//    @Value("${aa.aa}")
     private String aa;
 //    @Bean
 //    public IRule ribbonRule() {
@@ -42,7 +42,9 @@ public class ZuulApiGatewayApplication {
 
 
     public static void main(String[] args) {
+
         SpringApplication.run(ZuulApiGatewayApplication.class, args);
+
     }
 
     @RefreshScope

@@ -5,6 +5,8 @@ import com.tgw360.mapper.BarMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,9 +25,15 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/bar")
+@RefreshScope
 public class BarController {
     @Autowired
     private BarMapper barMapper;
+
+
+    @Value("${aaa.aaa.aaa}")
+    private String test;
+
     private final Logger logger = LoggerFactory.getLogger(BarController.class);
     @GetMapping("/{code}/{begin}/{end}")
     public List<Bar> findByCode(@PathVariable String code,@PathVariable String begin,@PathVariable String end){
@@ -50,6 +58,6 @@ public class BarController {
     public String test(){
         logger.info("info--------------------------------------------------");
         logger.debug("debug--------------------------------------------------");
-        return "success";
+        return test;
     }
 }

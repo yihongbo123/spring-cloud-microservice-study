@@ -15,8 +15,8 @@ spring:
     stream:
       kafka:
         binder:
-          zk-nodes: 172.18.44.120:2880,172.18.44.128:2880,172.18.44.123:2880
-          brokers: 172.18.44.120:9092,172.18.44.128:9092,172.18.44.123:9092
+          zk-nodes: 172.18.44.120:2880,172.18.44.81:2880,172.18.44.123:2880
+          brokers: 172.18.44.120:9092,172.18.44.81:9092,172.18.44.123:9092
 eureka:
   instance:
     hostname: 127.0.0.1
@@ -29,9 +29,16 @@ security:
   user:
     name: user
     password: 123456
+#  ignored: /**
+  ignored: /encrypt
 
 ## 发送http://host:port/bus/refresh刷新时，关闭安全验证
 management:
   security:
      enabled: false
-
+encrypt:
+  key-store:
+    location: config-server.keystore
+    alias: config-server
+    password: 123456
+    secret: 123456

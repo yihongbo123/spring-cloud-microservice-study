@@ -12,24 +12,24 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-//@Service
+@Service
 public class UserService {
     @Autowired
     private UserMapper userMapper;
     @Autowired
     private AccountsMapper accountsMapper;
 
-    @Transactional(isolation = Isolation.READ_COMMITTED)
+    @Transactional(isolation = Isolation.REPEATABLE_READ)
     public boolean save(User user){
-        boolean b = userMapper.save(user);
+//        boolean b = userMapper.save(user);
 //        int a = 10/0;
         Accounts accounts = new Accounts();
         accounts.setId(user.getId().intValue());
         accounts.setBalance(user.getId().intValue()*1000);
         accountsMapper.save(accounts);
-        if (!b){
-            return false;
-        }
+//        if (!b){
+//            return false;
+//        }
         return true;
     }
 

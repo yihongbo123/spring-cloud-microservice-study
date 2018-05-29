@@ -39,7 +39,8 @@ public class MessageServiceImpl implements MessageService{
     }
 
     @Override
-    public HashMap<String, Object> findUserAndCustomerById(Long id) {
+    public HashMap<String, Object>
+    findUserAndCustomerById(Long id) {
         try {
             Customer customer = this.customerFeignHystrixClient.findCustomerById(id);
 //            User user = userRepository.findOne(id);
