@@ -48,6 +48,6 @@ security:
 
 #测试随机数
 aa:
-  value: {cipher}2ca9578292d5edb8c6746606968f559cd1c9f3223f0ce4f1960c74701219ac71
+  value: {cipher}f791da4b3541e69e3ffec7aafd8d52a3fe009a6be3266c9c517e60520f94f514
 
 
