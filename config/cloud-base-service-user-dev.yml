@@ -48,7 +48,7 @@ security:
 
 #测试随机数
 aa:
-  value: '{cipher}AQCNJJBEOcHFfdyWzG4cDoRa1TsxY/TYa3Uj52f/qBYBqFySrmnGrt2YGqB0SR4Bw0NzghvGwRKwLTIqMnsf7xqblpPq5jnGaR0dVoaV6oLE7/gZr4qe7zwWLMAvpioXg/Utju+4cwKcrLxNrtAtWJW5lRn6nAYUae78vFWaRy9fOp+1wLGMEcz1a6+aw94roVPuDX1LaAlTaKorB6XILf4243W5m7F9xyUfgGXK99jU7sVSWbsH9zIar1abPB/1NH6WL622fa3PN64npdi/wBiXK9UrAQSBBLsaThojXrmG8zgPQv9+R2XtVWTm4BG+BluIBF/YPKhLE630ZO90DK9M9ja8gAb2WN7D4jQ47+l2XPfNVB+fxKbtiO+B/hsPeY4='
+  value: '{cipher}sdf'
 
 
 
