@@ -37,18 +37,10 @@ mapper:
   datasource:
     url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8
     username: testuser
-    password: testuser
+    password: '{cipher}AQADoNc3MoNnu0m0RHtnAjCOlWpaVCTburLUzawbBwtYucfd8vi6F7ItOv97tIudRVrCHH1R3Uun8OuzKyFZb2jgzutoeLj7F/Ckz6uyWvPGQ7KQWPizPOWYE7UHZZ4yVq/KcdT0bwJbudn8HR8x1/RSPDCh3AJ12+QoqNeG5Wgp2rGNnXwSRcTL5jQFjPnazRLSlEBcFfXSN4N098umgJwGLIgP9S6S6Q+6Jb452K+JVy7hu8TropFSXjyB+7dJOlzFl5xl6LYoG4zvuhWfyU234jGQYVLEt/cR8hBXkDEHUWehG+7W2EaWec5rDLOPR24urVYB+HARaOkF+ygrB5Uq6BZxmVgoFyKHaoKV0MUa/jLmr7MoiLMaR55eC+XuO5k='
+    test: '{cipher}AQAFV8b8AmP39/mRs2z7sm4dug9KaoRBTmSUNnD1CjNSyVxV52zz18LbNiPAH3db4Sl0hA9RfpLRdOqEZntIfOU334AcMqau4oaHbOvLfIwC+AkPpUyFQlY/1vWkjN9uXzpTUtbYFNw7wS6NABm+crwrqY34kPz/Ptif9eXcbRbb1n1RI94RtDbbW5yCn9WunOaAIbbLvobSDSjIRj6X0HpGxcQCSD8sHNaiKkFew9fkeVLzERq1TaImgERAHcSzpCBuzu+9+/nL+TVKNjyvVo6h3tG8Os2mlEReHcyQcAWoEe713bahwCR/eR72vITWjpmxRKlKMis7P4ePrsaRBYxapqAQ7JVQob2griG5gfpw7Hj/zojFGwYFjHXhWx28PNZV1rlRdELVc/GTTUgm8ry2'
     driverClassName: com.mysql.jdbc.Driver
 
-security:
-  user:
-    name: user
-    password: 123456
-
-
-#测试随机数
-aa:
-  value: '{cipher}AQBRUMBG5y234Qv4ZKLD7UdsY0p8ZfAdetDiQhxXDfZrZgxnb2m7Q3RZsHlM/GR2a2OfBAkODyci/0P3eV1qqb1Wp0d3fqiwbQT70nC6IcBl+6Fb5kwX0Q13+T58c3zphxcgeHkztMo5ezgz6sbInoNLdTnruNk78k8XYA9WJKRtDFBsNY5Yy+91Kdur//SXWZP/4Q5d+1c3dzNHVqbdmi2d0Zy+CsiHWYbZwfY1U7ixj8ChUHicYPgsCMBWIBNGC7UXJTijWNQd525RT8Uw+mggovx7M1oUKot5KKXzV1y1paasJZV9s5mmEkiRfqjJfMay9ThB3L4u/7zUYt24joTo/SUoVtRPYaebBcYK0wEDoGJL7v8+FwJu0T2+pbDLH/k='
 
 
 
