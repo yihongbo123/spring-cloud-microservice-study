@@ -38,9 +38,13 @@ mapper:
     url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8
     username: testuser
     password: '{cipher}AQADoNc3MoNnu0m0RHtnAjCOlWpaVCTburLUzawbBwtYucfd8vi6F7ItOv97tIudRVrCHH1R3Uun8OuzKyFZb2jgzutoeLj7F/Ckz6uyWvPGQ7KQWPizPOWYE7UHZZ4yVq/KcdT0bwJbudn8HR8x1/RSPDCh3AJ12+QoqNeG5Wgp2rGNnXwSRcTL5jQFjPnazRLSlEBcFfXSN4N098umgJwGLIgP9S6S6Q+6Jb452K+JVy7hu8TropFSXjyB+7dJOlzFl5xl6LYoG4zvuhWfyU234jGQYVLEt/cR8hBXkDEHUWehG+7W2EaWec5rDLOPR24urVYB+HARaOkF+ygrB5Uq6BZxmVgoFyKHaoKV0MUa/jLmr7MoiLMaR55eC+XuO5k='
-    test: '{cipher}AQAFV8b8AmP39/mRs2z7sm4dug9KaoRBTmSUNnD1CjNSyVxV52zz18LbNiPAH3db4Sl0hA9RfpLRdOqEZntIfOU334AcMqau4oaHbOvLfIwC+AkPpUyFQlY/1vWkjN9uXzpTUtbYFNw7wS6NABm+crwrqY34kPz/Ptif9eXcbRbb1n1RI94RtDbbW5yCn9WunOaAIbbLvobSDSjIRj6X0HpGxcQCSD8sHNaiKkFew9fkeVLzERq1TaImgERAHcSzpCBuzu+9+/nL+TVKNjyvVo6h3tG8Os2mlEReHcyQcAWoEe713bahwCR/eR72vITWjpmxRKlKMis7P4ePrsaRBYxapqAQ7JVQob2griG5gfpw7Hj/zojFGwYFjHXhWx28PNZV1rlRdELVc/GTTUgm8ry2'
+    test: aaa
     driverClassName: com.mysql.jdbc.Driver
 
+security:
+  user:
+    name: user
+    password: 123456
 
 
 
