@@ -3,6 +3,8 @@
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
     ​
     <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+    <springProperty scope="context" name="hostName" source="eureka.instance.hostname"/>
+    <springProperty scope="context" name="Port" source="server.port"/>
     <!-- 日志在工程中的输出位置 -->
     <property name="LOG_FILE" value="${BUILD_FOLDER:-build}/${springAppName}"/>​
     <!-- 控制台的日志输出样式 -->
@@ -68,7 +70,7 @@
     <appender name="KAFKA" class="com.github.danielwegener.logback.kafka.KafkaAppender">
         <encoder class="com.github.danielwegener.logback.kafka.encoding.PatternLayoutKafkaMessageEncoder">
             <layout class="net.logstash.logback.layout.LogstashLayout">
-                <customFields>{"port":"8055","host":"172.17.14.146"}</customFields>
+                <customFields>{"host":"${hostName}","port":"${Port}"}</customFields>
             </layout>
         </encoder>
 
