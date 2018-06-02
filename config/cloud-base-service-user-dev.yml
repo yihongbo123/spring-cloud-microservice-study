@@ -37,7 +37,7 @@ mapper:
   datasource:
     url: jdbc:mysql://172.18.44.120:3306/cloudTest?useUnicode=true&characterEncoding=utf8
     username: testuser
-    password: testuser
+    password: '{cipher}AQCHPa8h9jNZMRDW/5uHDKlFKYLTHs/gfIub8wt8TVw1wvqT9zU+FgximkJ0jml6QZw3P5wWnI4W/NWi7yijuKJKOMRmfTlZeRldRfkv+0Nm1q3LS3UYo+3A9O3GFbU/iXWRnmF7v4iDlmQJUVk9bIKMF+lL9fcsNHV0L5aQoAUT2475PlQGXvDNLP7yjc9/al0asf/nBnIRLUSYmZFi5aTCr0j6RV6kfmaDAjROl7IexCao4/tnv/xxnWPgRBItZlqzqnZPv5sdiYEnx4YONCAREFsku07M95kM6qQVUvtMcL4Xd66+/I3UR+mv0nbqEjRo9fs/jsIT3odsacyXONq1XqrHLw53d9XHLJPrrsZsaqwWKFXIepUHMG3hZBEIS5A='
     driverClassName: com.mysql.jdbc.Driver
 
 security:
