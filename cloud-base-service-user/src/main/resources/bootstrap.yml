@@ -20,6 +20,7 @@ spring:
       password: 123456
       #配置文件加载失败的快速响应
       fail-fast: true
+      name: ${spring.application.name}
     stream:
       kafka:
         binder:
@@ -40,4 +41,5 @@ eureka:
 #      enabled: true #开启健康检查（需要spring-boot-starter-actuator依赖）
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/ # 指定注册中⼼的地址
+#      defaultZone: http://172.17.14.145:8761/eureka/ # 指定注册中⼼的地址
 #      defaultZone: http://172.18.44.120:8761/eureka/ # 指定注册中⼼的地址

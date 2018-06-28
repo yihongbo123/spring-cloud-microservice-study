@@ -35,6 +35,9 @@ public class MasterDataSourceConfig {
 
     @Value("${mapper.datasource.driverClassName}")
     private String driverClass;
+    @Value("${mapper.datasource.test}")
+    private String test;
+
 
     @Bean(name = "masterDataSource")
     public DataSource masterDataSource() {
@@ -43,6 +46,7 @@ public class MasterDataSourceConfig {
         dataSource.setUrl(url);
         dataSource.setUsername(user);
         dataSource.setPassword(password);
+
         return dataSource;
     }
 

@@ -5,8 +5,8 @@ spring:
     name: cloud-service-elasticsearch
   data:
     elasticsearch:
-      cluster-name: elkcluster
-      cluster-nodes: 172.18.44.120:9300,172.18.44.128:9300,172.18.44.123:9300
+      cluster-name: predictionio
+      cluster-nodes: 172.18.44.82:9500,172.18.44.83:9500,172.18.44.84:9500
   cloud:
     config:
       profile: dev

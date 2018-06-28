@@ -11,50 +11,52 @@
 
     <artifactId>cloud-service-elaticsearch</artifactId>
 
+    <properties>
+        <es>2.0.1.RELEASE</es>
+    </properties>
+
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
         <!--<dependency>-->
             <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-eureka</artifactId>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
-            <!--&lt;!&ndash;<groupId>org.springframework.cloud</groupId>&ndash;&gt;-->
-            <!--&lt;!&ndash;<artifactId>spring-cloud-starter-config</artifactId>&ndash;&gt;-->
-        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
-
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
+            <!--<artifactId>spring-cloud-starter-config</artifactId>-->
         <!--</dependency>-->
 
-        <!--&lt;!&ndash;配置文件加载失败的重试机制&ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.retry</groupId>-->
-            <!--<artifactId>spring-retry</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-aop</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 
-        <!--&lt;!&ndash;消息总线&ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-bus-kafka</artifactId>-->
-        <!--</dependency>-->
+        <!--配置文件加载失败的重试机制-->
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!--消息总线-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-kafka</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <version>${es}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

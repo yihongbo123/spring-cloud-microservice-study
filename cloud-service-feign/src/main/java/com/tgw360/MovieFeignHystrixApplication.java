@@ -3,6 +3,7 @@ package com.tgw360;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
 import com.netflix.loadbalancer.RoundRobinRule;
+import feign.Feign;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
