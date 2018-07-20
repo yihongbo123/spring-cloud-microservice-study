@@ -12,6 +12,8 @@ spring:
 #          search-paths: config                           # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: yihb                                             # git仓库的账号
           password: 52464251
+#          指定一个不会被定期清理的目录
+          basedir: /root/springcloud/config-server/config-repo
     stream:
       kafka:
         binder:
